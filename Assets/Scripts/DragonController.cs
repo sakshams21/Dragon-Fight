@@ -34,9 +34,11 @@ public class DragonController : MonoBehaviour
     {
         if (!Physics.Raycast(_mainCamera.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, 100))
             return;
+
         MoveFeedback_Prefab.SetActive(false);
         MoveFeedback_Prefab.SetActive(true);
-        MoveFeedback_Prefab.transform.position = hit.point;
+        Vector3 pos = new Vector3(hit.point.x, 0.2f, hit.point.z);
+        MoveFeedback_Prefab.transform.position = pos;
         Ref_PlayerManager.AssignDestination(hit.point);
     }
 }
