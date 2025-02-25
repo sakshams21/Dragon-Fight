@@ -46,15 +46,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Abilities"",
-                    ""type"": ""Button"",
-                    ""id"": ""5974a025-9af3-405c-8e47-c59c998c39d0"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Potions"",
                     ""type"": ""Button"",
                     ""id"": ""28bcbdfb-8ad3-4da5-bd0f-510b88f722fe"",
@@ -64,9 +55,36 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Dodge"",
+                    ""name"": ""Fly"",
                     ""type"": ""Button"",
                     ""id"": ""a69d5965-d8b7-4cc1-8ecd-63c2db861049"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Ability_1"",
+                    ""type"": ""Button"",
+                    ""id"": ""5974a025-9af3-405c-8e47-c59c998c39d0"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Ability_2"",
+                    ""type"": ""Button"",
+                    ""id"": ""61b1b65c-7f62-4976-b9b5-8b59c04243de"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Ability_3"",
+                    ""type"": ""Button"",
+                    ""id"": ""7715de58-9f86-44a1-866b-f1e0a9ef9832"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -99,44 +117,11 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""6fd3d375-6672-410d-8ed4-ca6caccc31ff"",
-                    ""path"": ""<Keyboard>/a"",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Abilities"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a4ea4949-65db-44b2-9269-6d9cc729c2c5"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Abilities"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""1c177603-00f1-46e8-858d-8646f97d0f8c"",
-                    ""path"": ""<Keyboard>/e"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Abilities"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a21d3b15-282c-4583-aaae-22ecb4bfd868"",
-                    ""path"": ""<Keyboard>/r"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Abilities"",
+                    ""action"": ""Ability_1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -169,7 +154,29 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Dodge"",
+                    ""action"": ""Fly"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""36a48ce6-6f8f-49a9-bf7d-b3b44c48adef"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ability_2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""54c747f4-4349-477b-a56d-47368a90562b"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ability_3"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -759,9 +766,11 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_KeyBindings = asset.FindActionMap("KeyBindings", throwIfNotFound: true);
         m_KeyBindings_Move = m_KeyBindings.FindAction("Move", throwIfNotFound: true);
         m_KeyBindings_Target = m_KeyBindings.FindAction("Target", throwIfNotFound: true);
-        m_KeyBindings_Abilities = m_KeyBindings.FindAction("Abilities", throwIfNotFound: true);
         m_KeyBindings_Potions = m_KeyBindings.FindAction("Potions", throwIfNotFound: true);
-        m_KeyBindings_Dodge = m_KeyBindings.FindAction("Dodge", throwIfNotFound: true);
+        m_KeyBindings_Fly = m_KeyBindings.FindAction("Fly", throwIfNotFound: true);
+        m_KeyBindings_Ability_1 = m_KeyBindings.FindAction("Ability_1", throwIfNotFound: true);
+        m_KeyBindings_Ability_2 = m_KeyBindings.FindAction("Ability_2", throwIfNotFound: true);
+        m_KeyBindings_Ability_3 = m_KeyBindings.FindAction("Ability_3", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -843,18 +852,22 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private List<IKeyBindingsActions> m_KeyBindingsActionsCallbackInterfaces = new List<IKeyBindingsActions>();
     private readonly InputAction m_KeyBindings_Move;
     private readonly InputAction m_KeyBindings_Target;
-    private readonly InputAction m_KeyBindings_Abilities;
     private readonly InputAction m_KeyBindings_Potions;
-    private readonly InputAction m_KeyBindings_Dodge;
+    private readonly InputAction m_KeyBindings_Fly;
+    private readonly InputAction m_KeyBindings_Ability_1;
+    private readonly InputAction m_KeyBindings_Ability_2;
+    private readonly InputAction m_KeyBindings_Ability_3;
     public struct KeyBindingsActions
     {
         private @Controls m_Wrapper;
         public KeyBindingsActions(@Controls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_KeyBindings_Move;
         public InputAction @Target => m_Wrapper.m_KeyBindings_Target;
-        public InputAction @Abilities => m_Wrapper.m_KeyBindings_Abilities;
         public InputAction @Potions => m_Wrapper.m_KeyBindings_Potions;
-        public InputAction @Dodge => m_Wrapper.m_KeyBindings_Dodge;
+        public InputAction @Fly => m_Wrapper.m_KeyBindings_Fly;
+        public InputAction @Ability_1 => m_Wrapper.m_KeyBindings_Ability_1;
+        public InputAction @Ability_2 => m_Wrapper.m_KeyBindings_Ability_2;
+        public InputAction @Ability_3 => m_Wrapper.m_KeyBindings_Ability_3;
         public InputActionMap Get() { return m_Wrapper.m_KeyBindings; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -870,15 +883,21 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Target.started += instance.OnTarget;
             @Target.performed += instance.OnTarget;
             @Target.canceled += instance.OnTarget;
-            @Abilities.started += instance.OnAbilities;
-            @Abilities.performed += instance.OnAbilities;
-            @Abilities.canceled += instance.OnAbilities;
             @Potions.started += instance.OnPotions;
             @Potions.performed += instance.OnPotions;
             @Potions.canceled += instance.OnPotions;
-            @Dodge.started += instance.OnDodge;
-            @Dodge.performed += instance.OnDodge;
-            @Dodge.canceled += instance.OnDodge;
+            @Fly.started += instance.OnFly;
+            @Fly.performed += instance.OnFly;
+            @Fly.canceled += instance.OnFly;
+            @Ability_1.started += instance.OnAbility_1;
+            @Ability_1.performed += instance.OnAbility_1;
+            @Ability_1.canceled += instance.OnAbility_1;
+            @Ability_2.started += instance.OnAbility_2;
+            @Ability_2.performed += instance.OnAbility_2;
+            @Ability_2.canceled += instance.OnAbility_2;
+            @Ability_3.started += instance.OnAbility_3;
+            @Ability_3.performed += instance.OnAbility_3;
+            @Ability_3.canceled += instance.OnAbility_3;
         }
 
         private void UnregisterCallbacks(IKeyBindingsActions instance)
@@ -889,15 +908,21 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Target.started -= instance.OnTarget;
             @Target.performed -= instance.OnTarget;
             @Target.canceled -= instance.OnTarget;
-            @Abilities.started -= instance.OnAbilities;
-            @Abilities.performed -= instance.OnAbilities;
-            @Abilities.canceled -= instance.OnAbilities;
             @Potions.started -= instance.OnPotions;
             @Potions.performed -= instance.OnPotions;
             @Potions.canceled -= instance.OnPotions;
-            @Dodge.started -= instance.OnDodge;
-            @Dodge.performed -= instance.OnDodge;
-            @Dodge.canceled -= instance.OnDodge;
+            @Fly.started -= instance.OnFly;
+            @Fly.performed -= instance.OnFly;
+            @Fly.canceled -= instance.OnFly;
+            @Ability_1.started -= instance.OnAbility_1;
+            @Ability_1.performed -= instance.OnAbility_1;
+            @Ability_1.canceled -= instance.OnAbility_1;
+            @Ability_2.started -= instance.OnAbility_2;
+            @Ability_2.performed -= instance.OnAbility_2;
+            @Ability_2.canceled -= instance.OnAbility_2;
+            @Ability_3.started -= instance.OnAbility_3;
+            @Ability_3.performed -= instance.OnAbility_3;
+            @Ability_3.canceled -= instance.OnAbility_3;
         }
 
         public void RemoveCallbacks(IKeyBindingsActions instance)
@@ -1082,9 +1107,11 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnTarget(InputAction.CallbackContext context);
-        void OnAbilities(InputAction.CallbackContext context);
         void OnPotions(InputAction.CallbackContext context);
-        void OnDodge(InputAction.CallbackContext context);
+        void OnFly(InputAction.CallbackContext context);
+        void OnAbility_1(InputAction.CallbackContext context);
+        void OnAbility_2(InputAction.CallbackContext context);
+        void OnAbility_3(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

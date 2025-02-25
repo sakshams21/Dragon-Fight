@@ -24,15 +24,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Abilities",
-                    "type": "Button",
-                    "id": "5974a025-9af3-405c-8e47-c59c998c39d0",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Potions",
                     "type": "Button",
                     "id": "28bcbdfb-8ad3-4da5-bd0f-510b88f722fe",
@@ -42,9 +33,36 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Dodge",
+                    "name": "Fly",
                     "type": "Button",
                     "id": "a69d5965-d8b7-4cc1-8ecd-63c2db861049",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Ability_1",
+                    "type": "Button",
+                    "id": "5974a025-9af3-405c-8e47-c59c998c39d0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Ability_2",
+                    "type": "Button",
+                    "id": "61b1b65c-7f62-4976-b9b5-8b59c04243de",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Ability_3",
+                    "type": "Button",
+                    "id": "7715de58-9f86-44a1-866b-f1e0a9ef9832",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -77,44 +95,11 @@
                 {
                     "name": "",
                     "id": "6fd3d375-6672-410d-8ed4-ca6caccc31ff",
-                    "path": "<Keyboard>/a",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Abilities",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a4ea4949-65db-44b2-9269-6d9cc729c2c5",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Abilities",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1c177603-00f1-46e8-858d-8646f97d0f8c",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Abilities",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a21d3b15-282c-4583-aaae-22ecb4bfd868",
-                    "path": "<Keyboard>/r",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Abilities",
+                    "action": "Ability_1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -147,7 +132,29 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Dodge",
+                    "action": "Fly",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "36a48ce6-6f8f-49a9-bf7d-b3b44c48adef",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ability_2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "54c747f4-4349-477b-a56d-47368a90562b",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ability_3",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
