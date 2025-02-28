@@ -1635,7 +1635,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 1
       loopBlendOrientation: 1
       loopBlendPositionY: 1
@@ -1647,21 +1647,7 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0
-        functionName: Eyes
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c4c988c800d11794680c307fafec6cb5, type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.8269234
-        functionName: Eyes
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: c4c988c800d11794680c307fafec6cb5, type: 3}
-        floatParameter: 0
-        intParameter: 1
-        messageOptions: 0
+      events: []
       transformMask:
       - path: 
         weight: 1
