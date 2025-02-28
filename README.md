@@ -1,6 +1,4 @@
-# Dragon Fight
-
-![Game Banner](https://via.placeholder.com/800x200.png?text=Game+Banner)
+# Dragon Fight 🐉 vs 🐲
 
 ## 🎮 About the Game
 Boss battle
